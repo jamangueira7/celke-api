@@ -1,5 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
+
+require('./src/models/Home');
+const Home = mongoose.model('Home');
+
 const app = express();
 
 mongoose.connect(
@@ -12,7 +16,11 @@ mongoose.connect(
     });
 
 app.get('/home', function (req, res) {
-    res.send('Hello World');
+    res.send('Pegar dados Home');
+});
+
+app.post('/home', function (req, res) {
+    res.send('Cadastrar pagina home');
 });
 
 app.listen(3333, function () {
