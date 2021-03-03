@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 require('./src/models/Home');
 require('./src/models/Orcamento');
@@ -8,6 +9,13 @@ const Orcamento = mongoose.model('Orcamento');
 
 const app = express();
 app.use(express.json());
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
+    res.header("Access-Control-Allow-Headers", "X-PINGOTHER, Content-Type,Authorization");
+    app.use(cors());
+    next();
+});
 
 mongoose.connect(
     'mongodb://localhost:27017/celke',
