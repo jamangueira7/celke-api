@@ -2,9 +2,12 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 require('./src/models/Home');
+require('./src/models/Orcamento');
 const Home = mongoose.model('Home');
+const Orcamento = mongoose.model('Orcamento');
 
 const app = express();
+app.use(express.json());
 
 mongoose.connect(
     'mongodb://localhost:27017/celke',
@@ -67,6 +70,22 @@ app.post('/home', async (req, res) => {
     return res.json({
         error: false,
         message: "Conteúdo da página home cadastrado com sucesso!"
+    });
+
+});
+
+app.post('/orcamento', async (req, res) => {
+
+    await Orcamento.create(req.body, (err) => {
+        if(err) return res.status(400).json({
+            error: true,
+            message: "Erro: Solicitação de orçamento não enviado com sucesso!"
+        });
+    });
+
+    return res.json({
+        error: false,
+        message: "Solicitação de orçamento enviado com sucesso"
     });
 
 });
