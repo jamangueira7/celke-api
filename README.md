@@ -23,16 +23,16 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Esse projeto é um site.
+Esse projeto é uma API usada para aprender NodeJS e Mongoose.
+
 Projeto desenvolvido acompanhado as aulas do Celke na semana de Imersão ao Node.js, React e React Native.
+
+Font-end [aqui](https://github.com/jamangueira7/celke-node-js)
+
 Canal [aqui](https://www.youtube.com/channel/UC5ClMRHFl8o_MAaO4w7ZYug)
 
 <p align="center">
   <img alt="pagina inicial" src=".github/imagem1.PNG" width="100%">
-</p>
-
-<p align="center">
-  <img alt="Chat" src=".github/imagem2.PNG" width="100%">
 </p>
 
 ## 🚀 Como Rodar
@@ -40,7 +40,7 @@ Canal [aqui](https://www.youtube.com/channel/UC5ClMRHFl8o_MAaO4w7ZYug)
  - Clone o projeto.
  - Entre na pasta do projeto e rode o comando "npm install" para instalar as dependências.
  - Rode "npm run dev" para iniciar o servidor.
- - Para testar acesse localhost:3000.
+ - Para testar, acesse localhost:3333.
 
 ## 🤔 Como contribuir
 
