@@ -2,13 +2,14 @@
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-rodar">Como rodar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-rotas">Rotas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;
   </p>
 
 <br>
 
 
-## Celke - Semana de Imersão ao Node.js, React e React Native
+# Celke - Semana de Imersão ao Node.js, React e React Native
 
 ## 🚀 Tecnologias
 
@@ -41,6 +42,86 @@ Canal [aqui](https://www.youtube.com/channel/UC5ClMRHFl8o_MAaO4w7ZYug)
  - Entre na pasta do projeto e rode o comando "npm install" para instalar as dependências.
  - Rode "npm run dev" para iniciar o servidor.
  - Para testar, acesse localhost:3333.
+ 
+## 👩🏿‍💻 Rotas
+
+- **`POST /home`**: Rota para cadastra dados da home;
+Retorno
+```
+{
+    "error": false,
+    "home": {
+        "_id": "60400f602c5c0a10dcf30c32",
+        "topTitulo": "Temos a solução que usa empresa precisa!",
+        "topSubtitulo": "This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.",
+        "topTextoBtn": "Orçamento",
+        "topLinkBtn": "laptop-code",
+        "serTitulo": "Serviços",
+        "serSubtitulo": "This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.",
+        "serUmIcon": "",
+        "serUmTitulo": "Serviço um",
+        "serUmDesc": "This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.",
+        "serDoisIcon": "mobile-alt",
+        "serDoisTitulo": "Serviço dois",
+        "serDoisDesc": "This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.",
+        "serTresIcon": "network-wired",
+        "serTresTitulo": "Serviço três",
+        "serTresDesc": "This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.",
+        "createdAt": "2021-03-03T22:36:16.563Z",
+        "updatedAt": "2021-03-03T22:36:16.563Z",
+        "__v": 0
+    }
+}
+```
+
+- **`GET /home`**: Rota para retornar dados da home;
+Retorno
+```
+{
+    "error": false,
+    "home": {
+        "_id": "60400f602c5c0a10dcf30c32",
+        "topTitulo": "Temos a solução que usa empresa precisa!",
+        "topSubtitulo": "This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.",
+        "topTextoBtn": "Orçamento",
+        "topLinkBtn": "laptop-code",
+        "serTitulo": "Serviços",
+        "serSubtitulo": "This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.",
+        "serUmIcon": "",
+        "serUmTitulo": "Serviço um",
+        "serUmDesc": "This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.",
+        "serDoisIcon": "mobile-alt",
+        "serDoisTitulo": "Serviço dois",
+        "serDoisDesc": "This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.",
+        "serTresIcon": "network-wired",
+        "serTresTitulo": "Serviço três",
+        "serTresDesc": "This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.",
+        "createdAt": "2021-03-03T22:36:16.563Z",
+        "updatedAt": "2021-03-03T22:36:16.563Z",
+        "__v": 0
+    }
+}
+```
+
+- **`POST /orcamento`**: Rota para cadastra orcamentos;
+Envio
+```
+{
+    "name": "João Carlos2",
+    "email": "joao.carlos2@email.com",
+    "phone": "(11) 1111-1111",
+    "whatsApp": "(11) 1111-1111",
+    "projeto": "Criar sistema ADM"
+}
+```
+
+Retorno
+```
+{
+    "error": false,
+    "message": "Solicitação de orçamento enviado com sucesso"
+}
+```
 
 ## 🤔 Como contribuir
 
