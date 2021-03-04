@@ -20,6 +20,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS) 
 - [NodeJS](https://nodejs.org/en/) - v14.4.0
 - [NextJS](https://nextjs.org/)
+- [Docker](https://www.docker.com/)
 
 
 ## 💻 Projeto
