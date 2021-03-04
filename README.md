@@ -41,6 +41,7 @@ Canal [aqui](https://www.youtube.com/channel/UC5ClMRHFl8o_MAaO4w7ZYug)
  - Clone o projeto.
  - Entre na pasta do projeto e rode o comando "npm install" para instalar as dependências.
  - Rode "npm run dev" para iniciar o servidor.
+ - Rodar o MongoDB com docker: docker run --name mongodb -p 27017:27017 -d -t mongo
  - Para testar, acesse localhost:3333.
  
 ## 👩🏿‍💻 Rotas
