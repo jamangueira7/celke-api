@@ -48,7 +48,7 @@ app.post('/home', async (req, res) => {
         "topLinkBtn": "laptop-code",
         "serTitulo": "Serviços",
         "serSubtitulo": "This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.",
-        "serUmIcon": "",
+        "serUmIcon": "laptop-code",
         "serUmTitulo": "Serviço um",
         "serUmDesc": "This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.",
         "serDoisIcon": "mobile-alt",
